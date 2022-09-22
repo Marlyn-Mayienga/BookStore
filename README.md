@@ -1,15 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# BookStore
 
-> Description the project.
+> The Bookstore is a website that allows you to:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book using React and Redux.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React. Javascript, HTML, CSS
+- Bootstrap, Webpack, Gitflow, SCSS
 
 ## Live Demo (if available)
 
@@ -18,39 +21,40 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- To get a local copy up and running follow these simple example steps.
+- Clone the code to your machine, or download a ZIP of all the files directly.
+- To clone, run `git clone git@github.com:Marlyn-Mayienga/math-magicians.git `
+- cd into the project folder `cd math-magicians`
+- run `npm install`
+- run `npm start`
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Use your preferred code editor such as VSCode or Atom
 
 ### Setup
 
 ### Install
+`npm i`
 
 ### Usage
 
 ### Run tests
 
 ### Deployment
+`npm start`
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Marlyn Mayienga**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Marlyn_Mayienga](https://github.com/Marlyn_Mayienga)
+- Twitter: [@Merl_Mayienga](https://twitter.com/M_ayienga)
+- LinkedIn: [Marlyn_Mayienga](https://linkedin.com/in/Marlyn_Mayienga)
 
 ## 🤝 Contributing
 

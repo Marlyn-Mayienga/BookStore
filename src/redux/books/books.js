@@ -50,7 +50,7 @@ const addBook = (book) => async (dispatch) => {
 };
 
 const removeBook = (id) => async (dispatch) => {
-  await fetch(`${API_URL}/${id}`, {
+  await fetch(`${API_URL}/apps/rkZUelgZDiisQq3YPSnE/books/${id}`, {
     method: 'DELETE',
   });
   dispatch({

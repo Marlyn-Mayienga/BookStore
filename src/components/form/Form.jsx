@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../../redux/books/books';
 
 export default function Form() {
@@ -22,14 +21,15 @@ export default function Form() {
     <div className="form-container">
       <h2>ADD A NEW BOOK</h2>
       <form
-        onSubmit={() => {
+        onSubmit={(e) => {
           dispatch(addBook(
             {
               title: bookTitle,
               author: bookAuthor,
-              id: uuidv4(),
+              category: 'action',
             },
           ));
+          e.preventDefault();
         }}
       >
 

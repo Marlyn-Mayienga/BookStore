@@ -11,11 +11,8 @@ export default function categoriesReducer(state = initialState, action = {}) {
       return state;
   }
 }
-
 // Action creators
-
 const checkStatus = () => ({
   type: CHECK_STATUS,
 });
-
 export { checkStatus };

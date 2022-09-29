@@ -3,7 +3,23 @@ const API_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/book
 const GET_BOOKS = 'bookstore/books/GET_BOOKS';
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
-const initialState = [];
+const initialState = [
+  {
+    title: 'Harry Potter Series',
+    author: 'J K Rowlings',
+    id: 1,
+  },
+  {
+    title: 'It All Ends With Us',
+    author: 'Colleen Hoover',
+    id: 2,
+  },
+  {
+    title: 'Second Class Citizen',
+    author: 'Emecheta Buchi ',
+    id: 3,
+  },
+];
 
 // Reducer
 

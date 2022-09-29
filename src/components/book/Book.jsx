@@ -37,14 +37,14 @@ export default function book({ book }) {
       <div className="progress">
         <div className="circle" />
         <div className="progress-info">
-          <p className="completed-number">75%</p>
+          <p className="completed-number">45%</p>
           <p className="completed">Completed</p>
         </div>
       </div>
       <span />
       <div className="chapter-info">
         <h3>CURRENT CHAPTER</h3>
-        <h2>Chapter 7</h2>
+        <h2>Chapter 4</h2>
         <button className="update-button" type="button">UPDATE PROGRESS</button>
       </div>
     </div>

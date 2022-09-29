@@ -7,13 +7,13 @@ const initialState = [
     id: 1,
   },
   {
-    title: 'It all Ends with us',
-    author: 'Colleen hoover',
+    title: 'It All Ends With Us',
+    author: 'Colleen Hoover',
     id: 2,
   },
   {
-    title: 'Second Class citizen',
-    author: 'Emecheta buchi ',
+    title: 'Second Class Citizen',
+    author: 'Emecheta Buchi ',
     id: 3,
   },
 ];

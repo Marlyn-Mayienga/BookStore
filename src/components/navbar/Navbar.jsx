@@ -16,7 +16,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="user-icon">
-        <ImUser class="profile" />
+        <ImUser className="profile" />
       </div>
     </nav>
   );

@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useDispatch } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
+import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../../redux/books/books';
 import './Form.scss';
 
@@ -9,6 +8,8 @@ export default function Form() {
   const [bookAuthor, setBookAuthor] = useState('');
   const titleInput = useRef();
   const authorInput = useRef();
+
+  const books = useSelector((state) => state.books);
 
   const handleTitle = (e) => {
     setBookTitle(e.target.value);
@@ -26,6 +27,7 @@ export default function Form() {
         onSubmit={(e) => {
           dispatch(addBook(
             {
+              item_id: `item-${books.length + 1}`,
               title: bookTitle,
               author: bookAuthor,
               id: uuidv4(),

@@ -36,18 +36,32 @@ function getBooks() {
 }
 
 const addBook = (book) => async (dispatch) => {
-  await fetch(API_URL, {
+  await fetch(`${API_URL}/apps/rkZUelgZDiisQq3YPSnE/books/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(book),
   });
+
   dispatch({
     type: ADD_BOOK,
     payload: book,
   });
 };
+
+// export const getAPI = () => (dispatch) => fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rkZUelgZDiisQq3YPSnE/books')
+//   .then((response) => response.json())
+//   .then((book) => {
+//     const addBook = Object.keys(book).map((key) => ({
+//       item_id: key,
+//       title: book[key][0].title,
+//       category: book[key][0].category,
+//     }));
+//     addBook.forEach((book) => {
+//       dispatch({ type: ADD_BOOK, playload: item });
+//     });
+//   });
 
 const removeBook = (id) => async (dispatch) => {
   await fetch(`${API_URL}/apps/rkZUelgZDiisQq3YPSnE/books/${id}`, {
